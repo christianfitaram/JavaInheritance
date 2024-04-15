@@ -56,6 +56,7 @@ public class shop {
         System.out.println("5 -> Get ALL circulation permits");
         System.out.println("6 -> Process vehicle sales");
         System.out.println("7 -> See list of vehicle acording to STATE");
+        System.out.println("8 -> EXIT");
         do {
             // varibale
             int option = in.nextInt();
@@ -81,6 +82,9 @@ public class shop {
                     break;
                 case 7:
                     seeVehiclesByState(vehicles);
+                    break;
+                case 8:
+                    controlMenu = false;
                     break;
                 default:
                     System.out.println("Not valid option try again.");
