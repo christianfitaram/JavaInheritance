@@ -62,21 +62,29 @@ public class shop {
             switch (option) {
                 case 1:
                     singUpVehicle(vehicles, in, str);
+                    break;
                 case 2:
                     showArray(vehicles);
                     askReturnToMenu(vehicles);
+                    break;
                 case 3:
                     getCirculationPermit(vehicles);
+                    break;
                 case 4:
                     ceroEmissionsReport(vehicles);
+                    break;
                 case 5:
                     getAllCirculationPermit(vehicles);
+                    break;
                 case 6:
                     processVehiSale(vehicles);
+                    break;
                 case 7:
                     seeVehiclesByState(vehicles);
+                    break;
                 default:
                     System.out.println("Not valid option try again.");
+                    break;
             }
 
         } while (controlMenu);
